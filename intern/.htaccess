@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Interer Bereich STU"
+AuthUserFile /var/www/st-universe.eu/intern/.htpasswd
+require valid-user 

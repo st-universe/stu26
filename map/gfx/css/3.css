@@ -1,0 +1,132 @@
+body {
+        background-color: #000000;
+        color: #cc4242;
+        font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+        font-size: 9pt;
+        margin: 2px 2px 2px 2px;
+        scrollbar-arrow-color: #000000;
+        scrollbar-base-color: #000000;
+        scrollbar-3dlight-color: #000000;
+        scrollbar-face-color:#880000;
+        scrollbar-highlight-color: #000000;
+}
+#navi {
+        border-bottom: 1px solid #bb3030;
+        width: 130px;
+        padding: 0 0 0 0;
+}
+#navi ul {
+        list-style: none;
+        padding: 0 0 0 0;
+        margin: 0;
+}
+#navi li {
+                text-align: left;
+}
+#navi li.end {
+                background-color: transparent;
+                color: #111;
+                font-size: 2px;
+}
+#navi li a {
+        display: block;
+        padding: 2px 2px 2px 4px;
+        background-color: #880000;
+        border-top: 1px solid #bb3030;
+        border-left: 1px solid #bb3030;
+        border-right: 1px solid #bb3030;
+        color: #ffffff;
+        text-decoration: none;
+        width: 100%;
+}
+
+html>body #navi li a {
+                width: auto;
+}
+#navi li a:hover {
+                background-color: #cc8888;
+                color: #ffffff;
+}
+input.text {
+        background-color: #880000;
+        color: #ffffff;
+        border: 1px solid #bb3030;
+}
+a:link {
+        COLOR: #cc4242;
+        TEXT-DECORATION: none;
+}
+a:visited {
+        COLOR: #cc4242; TEXT-DECORATION: none
+}
+a:hover {
+        COLOR: #cc8888;
+        TEXT-DECORATION: underline
+}
+a:active {
+        COLOR: #cc8888; TEXT-DECORATION: none
+}
+th {
+        background-color : #880000;
+        color : #ffffff;
+        font-size : 9pt;
+		text-align: left;
+}
+td.m {
+        background-color : #880000;
+        color : #ffffff;
+        font-size : 9pt;
+}
+td {
+        background-color: #000000;
+        color : #cc4242;
+        font-size : 9pt;
+}
+td.l {
+        font-size: 7pt;
+        color: #FFFFFF;
+        width : 28px;
+        height : 30px;
+        border: 1px outset #550000;
+}
+td.la {
+	    background-color : #cc8888;
+        color : #000000;
+        font-size : 9pt;
+}
+td.cfa {
+	border: 1px solid #9BA4A4;
+}
+td.cfd {
+	border: 1px solid #505656;
+}
+table.tcal {
+	background-color: #262323;
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 1px;
+}
+textarea {
+        background-color: #880000;
+        color: #ffffff;
+        border: 1px outset #bb3030;
+	    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+        font-size: 8pt;
+}
+select {
+        background-color: #880000;
+        color: #ffffff;
+        border: 1px outset #bb3030
+}
+.text {
+        background-color: #880000;
+        color: #ffffff;
+        border: 1px double #bb3030;
+        font-size: 8pt;
+}
+.button {
+        background-color: #880000;
+        color: #ffffff;
+        border: 1px outset #bb3030;
+        font-size: 8pt;
+}

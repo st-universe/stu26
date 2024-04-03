@@ -1,0 +1,637 @@
+
+:root {
+	--mainColor-back:	 			#171717;
+	--mainColor-bord:				#4c4c4c;
+	--mainColor-font:				#8897cf;
+	--mainColor-hover:				#c2b942;
+	
+	--menuColor-1-back: 			#806080;
+	--menuColor-1-bord:				#cc99cc;
+	--menuColor-1-dark:				#5f495f;
+	--menuColor-1-font-norm:		#cc99cc;
+	--menuColor-1-font-head:		#000000;
+	--menuColor-1-font-hovr:		#c2b942;
+	
+	--menuColor-2-back:				#b38f6b;
+	--menuColor-2-bord:				#ffcc99;
+	--menuColor-2-dark:				#ffcc99;
+	--menuColor-2-font-norm:		#ffcc99;
+	--menuColor-2-font-head:		#000000;
+	--menuColor-2-font-hovr:		#c2b942;
+	
+	--menuColor-3-back: 			#804040;
+	--menuColor-3-bord:				#cc6666;
+	--menuColor-3-dark:				#623232;
+	--menuColor-3-font-norm:		#cc6666;
+	--menuColor-3-font-head:		#000000;
+	--menuColor-3-font-hovr:		#c2b942;
+	
+	--menuColor-4-back: 			#5c5c99;
+	--menuColor-4-bord:				#9999ff;
+	--menuColor-4-dark:				#9999ff;
+	--menuColor-4-font-norm:		#9999ff;
+	--menuColor-4-font-head:		#000000;
+	--menuColor-4-font-hovr:		#c2b942;
+	
+	--menuColor-active-back: 		#c2b942;
+	--menuColor-active-bord:		#e9df58;
+	--menuColor-active-dark:		#e9df58;
+	--menuColor-active-font-norm:	#000000;
+	--menuColor-active-font-head:	#000000;
+	--menuColor-active-font-hovr:	#000000;	
+}
+
+body {
+	background-color: 			#000000;
+	color: 						var(--mainColor-font);
+	font-family: 				Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 					9pt;
+	margin: 					2px 2px 2px 2px;
+	scrollbar-arrow-color: 		var(--mainColor-font);
+	scrollbar-base-color: 		#000000;
+	scrollbar-3dlight-color: 	#000000;
+	scrollbar-face-color:		var(--mainColor-back);
+	scrollbar-highlight-color: 	#000000;
+}
+
+a:link {
+	color: 				var(--mainColor-font);
+	text-decoration: 	none;
+}
+a:visited {
+	color: 				var(--mainColor-font);
+	text-decoration: 	none;
+}
+a:hover {
+	color: 				var(--mainColor-hover);
+	text-decoration: 	underline;
+}
+a:active {
+	color: 				var(--mainColor-font); 
+	text-decoration: 	none;
+}
+
+div.mainnavi {
+   position: 			fixed;
+   left: 				0px;
+   top: 				0px;
+}
+div.tools {
+   position: 			fixed;
+   left: 				0px;
+   top: 				330px;
+}
+div.colinfo {
+   position: 			fixed;
+   left: 				5px;
+   top: 				360px;
+   width: 				130px;
+}
+
+#navi {
+	border-bottom: 		1px solid var(--mainColor-back);
+	width: 				130px;
+	padding: 			0 0 0 0;
+}
+#navi ul {
+	list-style: 		none;
+	padding: 			0 0 0 0;
+	margin:				0;
+}
+#navi li {
+	text-align: 		left;
+}
+
+
+
+
+.mainmenu {
+	text-align: 		left;
+	text-decoration: 	none;	
+	margin-top:			2px;
+	margin-bottom:		2px;
+}
+
+
+
+.standardHeader {
+	display:		block; 
+	width: 			100%; 
+	vertical-align:	top;
+	text-align:		left;
+	
+	border-radius:  16px;
+	height:			30px;
+}
+
+.standardHeader table {
+	background:		none;
+}
+.standardHeader th {
+	background:		none;
+}
+
+.standardContent {
+	display: 		block; 
+	margin-left:	16px;
+	width: 			calc(100% - 16px);
+	
+	margin-left:	8px;
+	width: 			calc(100% - 82px);	
+}
+
+
+
+
+
+
+
+.menuHeader1 {
+	background-color: 	var(--menuColor-1-back);
+	border: 			1px solid var(--menuColor-1-bord);
+	color:				var(--menuColor-1-font-norm);
+}
+.menuHeader2 {
+	background-color: 	var(--menuColor-2-back);
+	border: 			1px solid var(--menuColor-2-bord);
+	color:				var(--menuColor-2-font-norm);
+}
+.menuHeader3 {
+	background-color: 	var(--menuColor-3-back);
+	border: 			1px solid var(--menuColor-3-bord);
+	color:				var(--menuColor-3-font-norm);
+	
+	background-color: 	var(--menuColor-3-bord);
+}
+.menuHeader4 {
+	background-color: 	var(--menuColor-4-back);
+	border: 			1px solid var(--menuColor-4-bord);
+	color:				var(--menuColor-4-font-norm);
+}
+.menuHeaderActive {
+	background-color: 	var(--menuColor-active-back);
+	border: 			1px solid var(--menuColor-active-bord);
+	color:				var(--menuColor-active-font-norm);
+}
+
+
+
+
+.menuHeader1 th {
+	color:				var(--menuColor-1-font-head);
+}
+.menuHeader2 th {
+	color:				var(--menuColor-2-font-head);
+}
+.menuHeader3 th {
+	color:				var(--menuColor-3-font-head);
+}
+.menuHeader4 th {
+	color:				var(--menuColor-4-font-head);
+}
+
+li.menuHeader1 a {
+	color: 				var(--menuColor-1-font-head);
+}
+li.menuHeader2 a {
+	color: 				var(--menuColor-2-font-head);
+}
+li.menuHeader3 a {
+	color: 				var(--menuColor-3-font-head);
+}
+li.menuHeader4 a {
+	color: 				var(--menuColor-4-font-head);
+}
+
+li.menuHeaderActive a:hover {
+	color: 				var(--menuColor-1-font-hovr);
+	text-decoration: 	underline;	
+}
+
+
+
+
+
+
+
+
+
+
+
+.menuContent1 {
+	background-color: 	#000000;
+	border: 			1px solid var(--menuColor-1-dark);
+	color:				var(--menuColor-1-font-norm);
+}
+.menuContent2 {
+	background-color: 	#000000;
+	border: 			1px solid var(--menuColor-2-dark);
+	color:				var(--menuColor-2-font-norm);
+}
+.menuContent3 {
+	background-color: 	#000000;
+	border: 			1px solid var(--menuColor-3-dark);
+	color:				var(--menuColor-3-font-norm);
+	
+	margin-top:			6px;
+	border: 			8px solid var(--menuColor-3-bord);
+	border-left: 		36px solid var(--menuColor-3-bord);
+	border-bottom-left-radius:		16px;
+	border-bottom-right-radius:		16px;
+	border-top:			none;		
+	padding:			5px;
+}
+.menuContent4 {
+	background-color: 	#000000;
+	border: 			1px solid var(--menuColor-4-dark);
+	color:				var(--menuColor-4-font-norm);	
+}
+
+
+.menuContent1 td,
+.menuContent1 a  {
+	color:				var(--menuColor-1-font-norm);
+}
+.menuContent2 td,
+.menuContent2 a  {
+	color:				var(--menuColor-2-font-norm);
+}
+.menuContent3 td,
+.menuContent3 a  {
+	color:				var(--menuColor-3-font-norm);
+}
+.menuContent4 td,
+.menuContent4 a  {
+	color:				var(--menuColor-4-font-norm);
+}
+
+
+.menuContent1 a:hover {
+	color:				var(--menuColor-1-font-hovr);
+}
+.menuContent2 a:hover {
+	color:				var(--menuColor-2-font-hovr);
+}
+.menuContent3 a:hover {
+	color:				var(--menuColor-3-font-hovr);
+}
+.menuContent4 a:hover {
+	color:				var(--menuColor-4-font-hovr);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#navi li a {
+	display: 			block;
+	padding: 			2px 2px 2px 4px;
+	width: 				100%;
+}
+
+
+
+
+
+html>body #navi li a {
+    width:				auto;
+}
+
+input.text {
+	background-color: 	var(--mainColor-back);
+	color: 				var(--mainColor-font);
+	border: 			1px solid var(--mainColor-bord);
+}
+
+.button {
+	background-color: 	#000000;
+	color: 				var(--mainColor-font);
+	border: 			1px outset var(--mainColor-back);
+	font-size: 			8pt;
+}
+
+table.subheader {
+	background: 		var(--menuColor-1-back); 
+	border: 			1px solid var(--menuColor-1-bord); 	
+	width:				100%;
+}
+
+th {
+	background-color : 	var(--mainColor-back);
+	color : 			var(--mainColor-font);
+	font-size : 		9pt;
+	text-align: 		left;
+}
+th.main {
+	background-color : 	var(--mainColor-back);
+	color : 			var(--mainColor-font);
+	font-size : 		9pt;
+	text-align: 		left;
+}
+.ttop {
+	background-color : 	var(--mainColor-font);
+	color : 			var(--mainColor-font);
+	font-size : 		9pt;
+}
+th.trans {
+    background: 		transparent;
+	font-size : 		9pt;
+	text-align: 		left;
+}
+td.m {
+	background-color : 	var(--mainColor-back);
+	color : 			var(--mainColor-font);
+	font-size : 		9pt;
+}
+td {
+	background-color: 	#000000;
+	color : 			var(--mainColor-font);
+	font-size : 		9pt;
+}
+td.l {
+	font-size: 			7pt;
+	color: 				#ffffff;
+	width : 			28px;
+	height : 			32px;
+	border-left: 		1px solid #555555;
+	border-top: 		1px solid #555555;
+	border-right: 		1px solid var(--mainColor-back);
+	border-bottom: 		1px solid var(--mainColor-back);
+}
+
+/* Schiffssensoren LSS */
+td.lssborder,
+td.lssnormal,
+td.lsscurrent,
+td.lssflyable {
+	width : 			30px;
+	height : 			30px;
+	overflow:			hidden;
+	padding: 			0px;
+	background-size: 	30px 30px;
+	text-align:			center;	
+}
+td.lssborder {
+	background-color : 	var(--mainColor-back);
+	color : 			var(--mainColor-font);
+	font-size : 		9pt;
+	font-weight: 		bold;	
+}
+td.lssnormal {
+	background-color : 	#000000;
+	font-size: 			7pt;
+	color: 				#ffffff;
+    outline: 			1px solid #404040;
+}
+td.lsscurrent {
+	background-color : 	#000000;
+	font-size: 			7pt;
+	color: 				#ffffff;
+	outline: 			1px solid #ffffff;
+}
+td.lssflyable {
+	background-color : 	#000000;
+	font-size: 			7pt;
+	color: 				#ffffff;
+	outline: 			1px solid #888888;
+	cursor: 			pointer;
+}
+
+/* Koloniefelder */
+td.cfa {
+	border: 			1px solid #aaaaaa;
+}
+td.cfd {
+	border: 			1px solid #ff6666;
+}
+td.cfb {
+	border: 			1px solid #66ffff;
+}
+td.cfn {
+	border: 			1px solid #404040;
+}
+
+td.cfd a img {
+	filter:				sepia(100%) saturate(300%) brightness(60%) hue-rotate(310deg);
+}
+td.cfb a img {
+	filter:				sepia(100%) saturate(300%) brightness(60%) hue-rotate(120deg);
+}
+
+/* KN */
+td.kn_text_official,
+td.kn_text_alliance,
+td.kn_text_story {
+	background-color : 	#000000;
+	color : 			var(--mainColor-font);
+	font-size : 		9pt;
+	text-align: 		left;
+	vertical-align:		top;
+	font-family: 		Verdana, Geneva, Arial, Helvetica, sans-serif;	
+}
+td.kn_text_story {
+	color : 			#888888;
+}
+
+td.kn_header_story,
+td.kn_header_official,
+td.kn_header_alliance {
+	font-size : 		9pt;
+	text-align: 		left;
+	vertical-align:		top;
+	font-family: 		Verdana, Geneva, Arial, Helvetica, sans-serif;	
+}
+td.kn_header_story {
+	background-color : 	#262323;
+	color : 			#bbbbbb;
+}
+td.kn_header_official {
+	background-color : 	#453b05;
+	color : 			#ffffff;
+}
+td.kn_header_alliance {
+	background-color : 	#054705;
+	color : 			#ffffff;
+}
+
+table.kn_story,
+table.kn_official,
+table.kn_alliance {
+	margin-left: 		25px;	
+	background-color: 	var(--mainColor-back);
+	width: 				90%;
+	border-collapse: 	separate;
+	border-spacing: 	1px;	
+    outline-style: 		outset;
+	outline-width: 		4px;	
+}	
+table.kn_story {
+    outline-color: 		#303030;	
+}
+table.kn_official {
+    outline-color: 		#ffd700;
+}
+table.kn_alliance {
+    outline-color: 		#00dd00;
+}
+
+
+table.tcal {
+	background-color: 	var(--mainColor-back);
+	width: 				100%;
+	border-collapse: 	separate;
+	border-spacing: 	1px;
+}
+textarea {
+	background-color: 	var(--mainColor-back);
+	color: 				var(--mainColor-font);
+	border: 			1px outset #000000;
+	font-family: 		Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 			8pt;
+}
+select {
+	background-color: 	#000000;
+	color: 				var(--mainColor-font);
+	border: 			1px outset var(--mainColor-back);
+}
+.text {
+	background-color: 	#000000;
+	color: 				var(--mainColor-font);
+	border: 			1px double var(--mainColor-back);
+	font-size: 			8pt;
+}
+
+
+
+table.black {
+	background-color: 	var(--mainColor-back);
+	width: 				98%;
+	margin-left: 		10px;
+	margin-right: 		10px;
+	border-collapse: 	separate;
+	border-spacing: 	1px;	
+    outline-style: 		solid;
+    outline-color: 		#000000;	
+	outline-width: 		4px;	
+}
+
+
+table.raceFleet0,
+table.raceFleet1,
+table.raceFleet2,
+table.raceFleet3 {
+	background-color: 	var(--mainColor-back);
+	width: 				98%;
+	margin-left: 		10px;
+	margin-right: 		10px;
+	border-collapse: 	separate;
+	border-spacing: 	1px;	
+    outline-style: 		outset;
+	outline-width: 		4px;	
+}
+table.raceFleet0 {
+    outline-color: 		var(--mainColor-back);
+}
+table.raceFleet1 {
+    outline-color: 		#145b93;
+}
+table.raceFleet2 {
+    outline-color: 		#0e6208;
+}
+table.raceFleet3 {
+    outline-color: 		#90110f;
+}
+
+
+table.raceFleet0 th,
+table.raceFleet1 th,
+table.raceFleet2 th,
+table.raceFleet3 th {
+	color : 			#ffffff;
+	font-size : 		9pt;
+	text-align: 		left;
+	background-color : 	var(--mainColor-back);
+}
+table.raceFleet0 th {
+	background-color : 	var(--mainColor-back);
+}
+table.raceFleet1 th {
+	background-color : 	#145b93;
+}
+table.raceFleet2 th {
+	background-color : 	#0e6208;
+}
+table.raceFleet3 th {
+	background-color : 	#90110f;
+}
+
+
+table.raceFleet0 th.main,
+table.raceFleet1 th.main,
+table.raceFleet2 th.main,
+table.raceFleet3 th.main {
+	background-color : 	#000000;
+	color : 			var(--mainColor-font);
+}
+
+
+table.raceFleet0 input {
+	background-color: 	#000000;
+	color: 				var(--mainColor-font);
+	border: 			1px outset var(--mainColor-back);
+	font-size: 			8pt;
+}
+table.raceFleet0 select {
+	background-color: 	#000000;
+	color: 				var(--mainColor-font);
+	border: 			1px outset var(--mainColor-back);
+	font-family: 		Verdana, Geneva, Arial, Helvetica, sans-serif;		
+    font-size: 			9pt;
+	width:				250px;	
+}
+
+
+
+
+
+
+
+div.mainMenuHeader1,
+div.mainMenuHeader2,
+div.mainMenuHeader3,
+div.mainMenuHeader4 {
+	display:		block; 
+	width: 			100%; 
+	vertical-align:	top;
+}
+div.mainMenuHeader1 table,
+div.mainMenuHeader2 table,
+div.mainMenuHeader3 table,
+div.mainMenuHeader4 table {
+	width: 			100%; 
+	height:			25px;
+	vertical-align:	middle;
+}
+div.mainMenuHeader1 th,
+div.mainMenuHeader2 th,
+div.mainMenuHeader3 th,
+div.mainMenuHeader4 th {
+	background:     none;
+	vertical-align:	middle;
+}
+
+
+
+
+

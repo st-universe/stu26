@@ -1,0 +1,786 @@
+@import 'kn.css';
+@import 'fleets.css';
+:root {
+	--mainMenu-width:	 			150px;
+	
+	--mainColor-back:	 			#171717;
+	--mainColor-bord:				#145f9a;
+	--mainColor-font:				#58b6ff;
+	--mainColor-hover:				#c2b942;
+	
+	--menuColor1-back: 				#112737;
+	--menuColor1-bord:				#145f9a;
+	--menuColor1-dark:				#112737;
+	--menuColor1-font-norm:			#58b6ff;
+	--menuColor1-font-head:			#58b6ff;
+	--menuColor1-font-hovr:			#c2b942;
+	
+	--menuColor2-back:				#112737;
+	--menuColor2-bord:				#145f9a;
+	--menuColor2-dark:				#112737;
+	--menuColor2-font-norm:			#58b6ff;
+	--menuColor2-font-head:			#58b6ff;
+	--menuColor2-font-hovr:			#c2b942;
+	
+	--menuColor3-back: 				#112737;
+	--menuColor3-bord:				#145f9a;
+	--menuColor3-dark:				#112737;
+	--menuColor3-font-norm:			#58b6ff;
+	--menuColor3-font-head:			#58b6ff;
+	--menuColor3-font-hovr:			#c2b942;
+	
+	--menuColor4-back: 				#112737;
+	--menuColor4-bord:				#145f9a;
+	--menuColor4-dark:				#112737;
+	--menuColor4-font-norm:			#58b6ff;
+	--menuColor4-font-head:			#58b6ff;
+	--menuColor4-font-hovr:			#c2b942;
+	
+	--menuColoractive-back: 		#112737;
+	--menuColoractive-bord:			#145f9a;
+	--menuColoractive-dark:			#112737;
+	--menuColoractive-font-norm:	#c2b942;
+	--menuColoractive-font-head:	#c2b942;
+	--menuColoractive-font-hovr:	#c2b942;	
+
+}
+
+body {
+	background-color: 			#000000;
+	color: 						var(--mainColor-font);
+	font-family: 				Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 					9pt;
+	margin: 					2px 2px 2px 2px;
+	scrollbar-arrow-color: 		var(--mainColor-font);
+	scrollbar-base-color: 		#000000;
+	scrollbar-3dlight-color: 	#000000;
+	scrollbar-face-color:		var(--mainColor-back);
+	scrollbar-highlight-color: 	#000000;
+}
+
+a:link,
+a:visited,
+a:active {
+	color: 				var(--mainColor-font);
+	text-decoration: 	none;
+}
+a:hover {
+	color: 				var(--mainColor-hover);
+	text-decoration: 	underline;
+}
+
+
+/* Main Menu Positions */
+div.mainnavi {
+   position: 			fixed;
+   left: 				2px;
+   top: 				0px;
+   width:				calc(var(--mainMenu-width) - 12px);
+}
+div.tools {
+   position: 			fixed;
+   left: 				0px;
+   top: 				360px;
+}
+div.colinfo {
+   position: 			fixed;
+   left: 				5px;
+   top: 				400px;
+   width: 				130px;
+}
+div.mainpageheader {
+   position: 			fixed;
+   left: 				var(--mainMenu-width);
+   right: 				5px;
+   top: 				0px;
+   z-index: 			900;
+}
+div.mainpagecontent {
+	position: 			absolute; 
+	left: 				var(--mainMenu-width);
+	top: 				35px; 
+	right: 				5px;
+}
+
+
+table.tablelayout {
+	border:				none;
+	border-spacing:		0px;
+    border-collapse: 	separate;
+}
+
+td.tablelayout {
+	padding-left: 		0px;
+	padding-top: 		4px;
+	padding-bottom: 	4px;
+	padding-right: 		8px;
+	margin:				0px;
+}
+
+
+
+
+
+#navi {
+	border-bottom: 		1px solid var(--mainColor-back);
+	padding: 			0 0 0 0;
+}
+#navi ul {
+	list-style: 		none;
+	padding: 			0 0 0 0;
+	margin:				0;
+}
+#navi li {
+	text-align: 		left;
+}
+
+
+
+
+.mainmenu {
+	text-align: 		left;
+	text-decoration: 	none;	
+	margin-top:			2px;
+	margin-bottom:		2px;
+}
+.headerbox {
+	display:			block; 
+	width: 				100%; 
+	vertical-align:		top;
+	text-align:			left;
+}
+.contentbox {
+	display: 			block; 
+	margin-left:		16px;
+	width: 				calc(100% - 16px);
+}
+
+
+
+
+
+.menuColorActive.mainmenu,
+.menuColorActive.headerbox {
+	background-color: 	var(--menuColoractive-back);
+	border: 			1px solid var(--menuColoractive-bord);
+	color:				var(--menuColoractive-font-norm);
+}
+
+li.menuColorActive a:hover {
+	color: 				var(--menuColoractive-font-hovr);
+	text-decoration: 	underline;	
+}
+
+
+
+
+
+.headerbox table:not(.suppressMenuColors) {
+	background:			none;
+	border:				none;
+}
+
+
+
+
+.menuColor1.mainmenu,
+.menuColor1.headerbox {
+	background-color: 	var(--menuColor1-back);
+	border: 			1px solid var(--menuColor1-bord);
+	color:				var(--menuColor1-font-norm);
+}
+.menuColor1.contentbox {
+	background-color: 	#000000;
+	border: 			1px solid var(--menuColor1-dark);
+	color:				var(--menuColor1-font-norm);
+}
+
+
+.menuColor1.contentbox table:not(.suppressMenuColors) {
+	background:			var(--menuColor1-dark);
+	border:				none;
+}
+
+.menuColor1.headerbox th,
+.menuColor1.headerbox td {
+	background:			none;
+	color:				var(--menuColor1-font-head);
+}
+.menuColor1.contentbox th {
+	background:			var(--menuColor1-dark);
+	color:				var(--menuColor1-font-head);
+}
+
+.menuColor1.headerbox a:link,
+.menuColor1.headerbox a:visited,
+.menuColor1.headerbox a:active,
+.menuColor1.mainmenu a:link,
+.menuColor1.mainmenu a:visited,
+.menuColor1.mainmenu a:active
+{
+	color:				var(--menuColor1-font-head);
+}
+.menuColor1.contentbox td,
+.menuColor1.contentbox a:link,
+.menuColor1.contentbox a:visited,
+.menuColor1.contentbox a:active
+{
+	color:				var(--menuColor1-font-norm);
+}
+.menuColor1.headerbox a:hover,
+.menuColor1.contentbox a:hover,
+.menuColor1.mainmenu a:hover
+{
+	color:				var(--menuColor1-font-hovr);
+}
+
+.menuColor1 input[type="text"]
+{
+	background-color: 	#000000;	
+	color:				var(--menuColor1-font-norm);
+	border: 			1px solid var(--menuColor1-dark);	
+}
+.menuColor1 input[type="submit"],
+.menuColor1 input[type="button"],
+.menuColor1 select
+{
+	background-color: 	var(--menuColor1-font-dark);
+	color:				var(--menuColor1-font-norm);
+	outline:			1px outset var(--menuColor1-dark);	
+	cursor:				pointer;
+	height:				20px;
+}
+
+
+
+.menuColor1.headerbox.highlighted {
+	background-color: 	var(--menuColoractive-back);
+	border: 			1px solid var(--menuColoractive-bord);
+	color:				var(--menuColoractive-font-norm);
+}
+.menuColor1.headerbox.highlighted th,
+.menuColor1.headerbox.highlighted td {
+	background:			none;
+	color:				var(--menuColor1-font-head);
+}
+.menuColor1.headerbox.highlighted a:link,
+.menuColor1.headerbox.highlighted a:visited,
+.menuColor1.headerbox.highlighted a:active
+{
+	color:				var(--menuColor1-font-head);
+}
+.menuColor1.headerbox.highlighted a:hover
+{
+	color:				var(--menuColor1-font-hovr);
+}
+
+
+
+
+
+.menuColor2.mainmenu,
+.menuColor2.headerbox {
+	background-color: 	var(--menuColor2-back);
+	border: 			1px solid var(--menuColor2-bord);
+	color:				var(--menuColor2-font-norm);
+}
+.menuColor2.contentbox {
+	background-color: 	#000000;
+	border: 			1px solid var(--menuColor2-dark);
+	color:				var(--menuColor2-font-norm);
+}
+
+
+.menuColor2.contentbox table:not(.suppressMenuColors) {
+	background:			var(--menuColor2-dark);
+	border:				none;
+}
+
+.menuColor2.headerbox th,
+.menuColor2.headerbox td {
+	background:			none;
+	color:				var(--menuColor2-font-head);
+}
+.menuColor2.contentbox th {
+	background:			var(--menuColor2-dark);
+	color:				var(--menuColor2-font-head);
+}
+
+.menuColor2.headerbox a:link,
+.menuColor2.headerbox a:visited,
+.menuColor2.headerbox a:active,
+.menuColor2.mainmenu a:link,
+.menuColor2.mainmenu a:visited,
+.menuColor2.mainmenu a:active
+{
+	color:				var(--menuColor2-font-head);
+}
+.menuColor2.contentbox td,
+.menuColor2.contentbox a:link,
+.menuColor2.contentbox a:visited,
+.menuColor2.contentbox a:active
+{
+	color:				var(--menuColor2-font-norm);
+}
+.menuColor2.headerbox a:hover,
+.menuColor2.contentbox a:hover,
+.menuColor2.mainmenu a:hover
+{
+	color:				var(--menuColor2-font-hovr);
+}
+
+.menuColor2 input[type="text"]
+{
+	background-color: 	#000000;	
+	color:				var(--menuColor2-font-norm);
+	border: 			1px solid var(--menuColor2-dark);	
+}
+.menuColor2 input[type="submit"],
+.menuColor2 input[type="button"],
+.menuColor2 select
+{
+	background-color: 	var(--menuColor2-font-dark);
+	color:				var(--menuColor2-font-norm);
+	outline:			1px outset var(--menuColor2-dark);	
+	cursor:				pointer;
+	height:				20px;
+}
+
+
+
+.menuColor2.headerbox.highlighted {
+	background-color: 	var(--menuColoractive-back);
+	border: 			1px solid var(--menuColoractive-bord);
+	color:				var(--menuColoractive-font-norm);
+}
+.menuColor2.headerbox.highlighted th,
+.menuColor2.headerbox.highlighted td {
+	background:			none;
+	color:				var(--menuColor2-font-head);
+}
+.menuColor2.headerbox.highlighted a:link,
+.menuColor2.headerbox.highlighted a:visited,
+.menuColor2.headerbox.highlighted a:active
+{
+	color:				var(--menuColor2-font-head);
+}
+.menuColor2.headerbox.highlighted a:hover
+{
+	color:				var(--menuColor2-font-hovr);
+}
+
+
+
+.menuColor3.mainmenu,
+.menuColor3.headerbox {
+	background-color: 	var(--menuColor3-back);
+	border: 			1px solid var(--menuColor3-bord);
+	color:				var(--menuColor3-font-norm);
+}
+.menuColor3.contentbox {
+	background-color: 	#000000;
+	border: 			1px solid var(--menuColor3-dark);
+	color:				var(--menuColor3-font-norm);
+}
+
+
+.menuColor3.contentbox table:not(.suppressMenuColors) {
+	background:			var(--menuColor3-dark);
+	border:				none;
+}
+
+.menuColor3.headerbox th,
+.menuColor3.headerbox td {
+	background:			none;
+	color:				var(--menuColor3-font-head);
+}
+.menuColor3.contentbox th {
+	background:			var(--menuColor3-dark);
+	color:				var(--menuColor3-font-head);
+}
+
+.menuColor3.headerbox a:link,
+.menuColor3.headerbox a:visited,
+.menuColor3.headerbox a:active,
+.menuColor3.mainmenu a:link,
+.menuColor3.mainmenu a:visited,
+.menuColor3.mainmenu a:active
+{
+	color:				var(--menuColor3-font-head);
+}
+.menuColor3.contentbox td,
+.menuColor3.contentbox a:link,
+.menuColor3.contentbox a:visited,
+.menuColor3.contentbox a:active
+{
+	color:				var(--menuColor3-font-norm);
+}
+.menuColor3.headerbox a:hover,
+.menuColor3.contentbox a:hover,
+.menuColor3.mainmenu a:hover
+{
+	color:				var(--menuColor3-font-hovr);
+}
+
+.menuColor3 input[type="text"]
+{
+	background-color: 	#000000;	
+	color:				var(--menuColor3-font-norm);
+	border: 			1px solid var(--menuColor3-dark);	
+}
+.menuColor3 input[type="submit"],
+.menuColor3 input[type="button"],
+.menuColor3 select
+{
+	background-color: 	var(--menuColor3-font-dark);
+	color:				var(--menuColor3-font-norm);
+	outline:			1px outset var(--menuColor3-dark);	
+	cursor:				pointer;
+	height:				20px;
+}
+
+
+
+.menuColor3.headerbox.highlighted {
+	background-color: 	var(--menuColoractive-back);
+	border: 			1px solid var(--menuColoractive-bord);
+	color:				var(--menuColoractive-font-norm);
+}
+.menuColor3.headerbox.highlighted th,
+.menuColor3.headerbox.highlighted td {
+	background:			none;
+	color:				var(--menuColor3-font-head);
+}
+.menuColor3.headerbox.highlighted a:link,
+.menuColor3.headerbox.highlighted a:visited,
+.menuColor3.headerbox.highlighted a:active
+{
+	color:				var(--menuColor3-font-head);
+}
+.menuColor3.headerbox.highlighted a:hover
+{
+	color:				var(--menuColor3-font-hovr);
+}
+
+
+
+
+.menuColor4.mainmenu,
+.menuColor4.headerbox {
+	background-color: 	var(--menuColor4-back);
+	border: 			1px solid var(--menuColor4-bord);
+	color:				var(--menuColor4-font-norm);
+}
+.menuColor4.contentbox {
+	background-color: 	#000000;
+	border: 			1px solid var(--menuColor4-dark);
+	color:				var(--menuColor4-font-norm);
+}
+
+
+.menuColor4.contentbox table:not(.suppressMenuColors) {
+	background:			var(--menuColor4-dark);
+	border:				none;
+}
+
+.menuColor4.headerbox th,
+.menuColor4.headerbox td {
+	background:			none;
+	color:				var(--menuColor4-font-head);
+}
+.menuColor4.contentbox th {
+	background:			var(--menuColor4-dark);
+	color:				var(--menuColor4-font-head);
+}
+
+.menuColor4.headerbox a:link,
+.menuColor4.headerbox a:visited,
+.menuColor4.headerbox a:active,
+.menuColor4.mainmenu a:link,
+.menuColor4.mainmenu a:visited,
+.menuColor4.mainmenu a:active
+{
+	color:				var(--menuColor4-font-head);
+}
+.menuColor4.contentbox td,
+.menuColor4.contentbox a:link,
+.menuColor4.contentbox a:visited,
+.menuColor4.contentbox a:active
+{
+	color:				var(--menuColor4-font-norm);
+}
+.menuColor4.headerbox a:hover,
+.menuColor4.contentbox a:hover,
+.menuColor4.mainmenu a:hover
+{
+	color:				var(--menuColor4-font-hovr);
+}
+
+.menuColor4 input[type="text"]
+{
+	background-color: 	#000000;	
+	color:				var(--menuColor4-font-norm);
+	border: 			1px solid var(--menuColor4-dark);	
+}
+.menuColor4 input[type="submit"],
+.menuColor4 input[type="button"],
+.menuColor4 select
+{
+	background-color: 	var(--menuColor4-font-dark);
+	color:				var(--menuColor4-font-norm);
+	outline:			1px outset var(--menuColor4-dark);	
+	cursor:				pointer;
+	height:				20px;
+}
+
+
+
+.menuColor4.headerbox.highlighted {
+	background-color: 	var(--menuColoractive-back);
+	border: 			1px solid var(--menuColoractive-bord);
+	color:				var(--menuColoractive-font-norm);
+}
+.menuColor4.headerbox.highlighted th,
+.menuColor4.headerbox.highlighted td {
+	background:			none;
+	color:				var(--menuColor4-font-head);
+}
+.menuColor4.headerbox.highlighted a:link,
+.menuColor4.headerbox.highlighted a:visited,
+.menuColor4.headerbox.highlighted a:active
+{
+	color:				var(--menuColor4-font-head);
+}
+.menuColor4.headerbox.highlighted a:hover
+{
+	color:				var(--menuColor4-font-hovr);
+}
+
+
+
+
+
+
+th.statemarker {
+	text-align:			center;
+	width:				18px;
+}
+.menuColor1:not(.highlighted) th.statemarker::after,
+.menuColor2:not(.highlighted) th.statemarker::after,
+.menuColor3:not(.highlighted) th.statemarker::after,
+.menuColor4:not(.highlighted) th.statemarker::after {
+	content:			url('../buttons/down1.gif');
+}
+.menuColor1.highlighted th.statemarker::after,
+.menuColor2.highlighted th.statemarker::after,
+.menuColor3.highlighted th.statemarker::after,
+.menuColor4.highlighted th.statemarker::after {
+	content:			url('../buttons/down2.gif');
+}
+
+
+
+
+
+#navi li a {
+	display: 			block;
+	padding: 			2px 2px 2px 4px;
+	width: 				100%;
+}
+
+
+html>body #navi li a {
+    width:				auto;
+}
+
+input.text {
+	background-color: 	var(--mainColor-back);
+	color: 				var(--mainColor-font);
+	border: 			1px solid var(--mainColor-bord);
+}
+
+.button {
+	background-color: 	#000000;
+	color: 				var(--mainColor-font);
+	border: 			1px outset var(--mainColor-back);
+	font-size: 			8pt;
+}
+
+
+
+
+
+
+th {
+	background-color : 	var(--mainColor-back);
+	color : 			var(--mainColor-font);
+	font-size : 		9pt;
+	text-align: 		left;
+}
+th.main {
+	background-color : 	var(--mainColor-back);
+	color : 			var(--mainColor-font);
+	font-size : 		9pt;
+	text-align: 		left;
+}
+.ttop {
+	background-color : 	var(--mainColor-font);
+	color : 			var(--mainColor-font);
+	font-size : 		9pt;
+}
+th.trans {
+    background: 		transparent;
+	font-size : 		9pt;
+	text-align: 		left;
+}
+td.m {
+	background-color : 	var(--mainColor-back);
+	color : 			var(--mainColor-font);
+	font-size : 		9pt;
+}
+td {
+	background-color: 	#000000;
+	color : 			var(--mainColor-font);
+	font-size : 		9pt;
+}
+td.l {
+	font-size: 			7pt;
+	color: 				#ffffff;
+	width : 			28px;
+	height : 			32px;
+	border-left: 		1px solid #555555;
+	border-top: 		1px solid #555555;
+	border-right: 		1px solid var(--mainColor-back);
+	border-bottom: 		1px solid var(--mainColor-back);
+}
+
+
+
+/* Kartenfelder */
+table.mapfields.suppressMenuColors {
+	table-layout: 		fixed;	
+	background:			#000000;
+    border-spacing: 	3px;
+    border-collapse: 	separate;	
+}
+table.mapfields.suppressMenuColors th.fieldlegend {
+	width : 			30px;
+	height : 			30px;
+	overflow:			hidden;
+	padding: 			0px;
+	background-size: 	30px 30px;
+	text-align:			center;	
+	background-color : 	var(--mainColor-back);
+	color : 			var(--mainColor-font);
+	font-size : 		8pt;
+	font-weight: 		bold;		
+	outline: 			1px solid #404040;
+}
+table.mapfields.suppressMenuColors td {
+	width : 			30px;
+	height : 			30px;
+	overflow:			hidden;
+	padding: 			0px;
+	background-size: 	30px 30px;
+	text-align:			center;	
+	background-color : 	#000000;
+	font-size: 			7pt;
+	color: 				#ffffff;	
+}
+
+td.fieldnormal {
+    outline: 			1px solid #404040;
+}
+td.fieldcurrent {
+	outline: 			1px solid #ffffff;
+}
+td.fieldflyable {
+	outline: 			1px solid #888888;
+	cursor: 			pointer;
+}
+td.fieldactive {
+	outline: 			1px solid #aaaaaa;
+}
+td.fielddeactivated {
+	outline: 			1px solid #ff6666;
+}
+td.fieldconstruction {
+	outline: 			1px solid #66ffff;
+}
+
+td.fielddeactivated a img {
+	filter:				sepia(100%) saturate(300%) brightness(60%) hue-rotate(310deg);
+}
+td.fieldconstruction a img {
+	filter:				sepia(100%) saturate(300%) brightness(60%) hue-rotate(120deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+table.tcal {
+	background-color: 	var(--mainColor-back);
+	width: 				100%;
+	border-collapse: 	separate;
+	border-spacing: 	1px;
+}
+textarea {
+	background-color: 	var(--mainColor-back);
+	color: 				var(--mainColor-font);
+	border: 			1px outset #000000;
+	font-family: 		Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 			8pt;
+}
+select {
+	background-color: 	#000000;
+	color: 				var(--mainColor-font);
+	border: 			1px outset var(--mainColor-back);
+}
+.text {
+	background-color: 	#000000;
+	color: 				var(--mainColor-font);
+	border: 			1px double var(--mainColor-back);
+	font-size: 			8pt;
+}
+
+
+
+
+
+
+table.black {
+	background-color: 	var(--mainColor-back);
+	width: 				calc(100% - 24px);
+	margin: 			12px;
+	margin-bottom:		24px;
+	border-collapse: 	separate;
+	border-spacing: 	1px;		
+    outline: 			4px solid #000000;
+	margin-bottom:		12px;	
+}
+
+table.black.suppressMenuColors th {
+	font-size : 		9pt;
+	text-align: 		left;
+	background-color : 	var(--mainColor-back);
+}
+table.black.suppressMenuColors td,
+table.black.suppressMenuColors a:link,
+table.black.suppressMenuColors a:visited
+{
+
+}
+
+
+
+
+
+
+

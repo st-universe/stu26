@@ -1,0 +1,133 @@
+body {
+        background-color: #000000;
+        color: #b46757;
+        font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+        font-size: 9pt;
+        margin: 2px 2px 2px 2px;
+        scrollbar-arrow-color: #ffffff;
+        scrollbar-base-color: #000000;
+        scrollbar-3dlight-color: #000000;
+        scrollbar-face-color:#005500;
+        scrollbar-highlight-color: #000000;
+}
+#navi {
+        border-bottom: 3px solid #000000;
+        width: 130px;
+        padding: 0 0 0 0;
+}
+#navi ul {
+        list-style: none;
+        padding: 0 0 0 0;
+        margin: 0;
+}
+#navi li {
+                text-align: left;
+}
+#navi li.end {
+                background-color: transparent;
+                color: #111;
+                font-size: 2px;
+}
+#navi li a {
+        display: block;
+        padding: 2px 2px 2px 4px;
+        background-color: #ae697d;
+        border-top: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        color: #000000;
+        text-decoration: none;
+        width: 100%;
+}
+
+html>body #navi li a {
+                width: auto;
+}
+#navi li a:hover {
+                background-color: #c198b0;
+                color: #000000;
+}
+input.text {
+        background-color: #b28452;
+        color: #000000;
+        border: 2px solid #000000;
+        font-size: 10pt;
+}
+a:link {
+        COLOR: #b46757;
+        TEXT-DECORATION: none;
+}
+a:visited {
+        COLOR: #b46757;
+        TEXT-DECORATION: none
+}
+a:hover {
+        COLOR: #Ff0000;
+        TEXT-DECORATION: underline
+}
+a:active {
+        COLOR: #c198b0;
+        TEXT-DECORATION: none
+}
+th {
+        background-color : #97567b;
+        color : #000000;
+        font-size : 9pt;
+        border-right: 2px solid #000000;
+        border-bottom: 2px solid #000000;
+}
+td {
+        background-color: #000000;
+        color : #b46757;
+        font-size : 9pt;
+        border-right: 2px solid #000000;
+}
+td.l {
+        font-size: 7pt;
+        color: #ffffff;
+        width : 28px;
+        height : 32px;
+        border-left: 1px solid #555555;
+		border-top: 1px solid #555555;
+		border-right: 1px solid #111111;
+		border-bottom: 1px solid #111111;
+}
+table.tcal {
+        background-color: #000000;
+        width: 100%;
+}
+textarea {
+        background-color: #c2b74b;
+        color: #000000;
+        border: 1px outset #000000;
+            font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+        font-size: 9pt;
+}
+select {
+        background-color: #bebcdf;
+        color: #000000;
+        border: 1px outset #bebcdf;
+}
+.text {
+        background-color: #c2b74b;
+        color: #000000;
+        border: 1px double #000000;
+        font-size: 10pt;
+}
+
+/* .cbutton bitte in Ruhe lassen */
+.cbutton {
+        background-color: #000000;
+        color: #ffffff;
+        font-size: 8pt;
+        border: 0px;
+        width: 25px;
+        height: 25px;
+        border-width : 0px;
+}
+.button {
+        background-color: #b28452;
+        color: #000000;
+        border: 1px outset #b28452;
+        font-size: 8pt;
+}

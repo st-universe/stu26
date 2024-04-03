@@ -1,0 +1,228 @@
+:root {
+
+	--conflict1-back: 			#124d7c;
+	--conflict1-bord:			#1b91ee;
+	--conflict1-dark:			#0b314f;
+	--conflict1-font-norm:		#1b91ee;
+	--conflict1-font-head:		#ffffff;
+	--conflict1-font-hovr:		#c2b942;	
+	
+	--conflict2-back: 			#0c4b08;
+	--conflict2-bord:			#1caf11;
+	--conflict2-dark:			#093b06;
+	--conflict2-font-norm:		#1caf11;
+	--conflict2-font-head:		#ffffff;
+	--conflict2-font-hovr:		#c2b942;	
+	
+	--conflict3-back: 			#640f0e;
+	--conflict3-bord:			#e3120f;
+	--conflict3-dark:			#470b0a;
+	--conflict3-font-norm:		#e3120f;
+	--conflict3-font-head:		#ffffff;
+	--conflict3-font-hovr:		#c2b942;	
+	
+	--conflict0-back: 			#171717;
+	--conflict0-bord:			#4c4c4c;
+	--conflict0-dark:			#222222;
+	--conflict0-font-norm:		#aaaaaa;
+	--conflict0-font-head:		#ffffff;
+	--conflict0-font-hovr:		#c2b942;	
+	
+}
+
+
+
+.conflict1.headerbox {
+	background-color: 	var(--conflict1-back);
+	border: 			1px solid var(--conflict1-bord);
+	color:				var(--conflict1-font-norm);
+}
+.conflict1.contentbox {
+	background-color: 	#000000;
+	border: 			1px solid var(--conflict1-dark);
+	color:				var(--conflict1-font-norm);
+}
+.conflict1.contentbox table:not(.suppressMenuColors) {
+	background:			var(--conflict1-dark);
+	border:				none;
+}
+.conflict1.headerbox th,
+.conflict1.headerbox td {
+	background:			none;
+	color:				var(--conflict1-font-head);
+}
+.conflict1.contentbox th {
+	background:			var(--conflict1-dark);
+	color:				var(--conflict1-font-head);
+}
+.conflict1.headerbox a:link,
+.conflict1.headerbox a:visited,
+.conflict1.headerbox a:active,
+.conflict1.mainmenu a:link,
+.conflict1.mainmenu a:visited,
+.conflict1.mainmenu a:active
+{
+	color:				var(--conflict1-font-head);
+}
+.conflict1.contentbox td,
+.conflict1.contentbox a:link,
+.conflict1.contentbox a:visited,
+.conflict1.contentbox a:active
+{
+	color:				var(--conflict1-font-norm);
+}
+.conflict1.headerbox a:hover,
+.conflict1.contentbox a:hover,
+.conflict1.mainmenu a:hover
+{
+	color:				var(--conflict1-font-hovr);
+}
+
+
+
+.conflict2.headerbox {
+	background-color: 	var(--conflict2-back);
+	border: 			1px solid var(--conflict2-bord);
+	color:				var(--conflict2-font-norm);
+}
+.conflict2.contentbox {
+	background-color: 	#000000;
+	border: 			1px solid var(--conflict2-dark);
+	color:				var(--conflict2-font-norm);
+}
+.conflict2.contentbox table:not(.suppressMenuColors) {
+	background:			var(--conflict2-dark);
+	border:				none;
+}
+.conflict2.headerbox th,
+.conflict2.headerbox td {
+	background:			none;
+	color:				var(--conflict2-font-head);
+}
+.conflict2.contentbox th {
+	background:			var(--conflict2-dark);
+	color:				var(--conflict2-font-head);
+}
+.conflict2.headerbox a:link,
+.conflict2.headerbox a:visited,
+.conflict2.headerbox a:active,
+.conflict2.mainmenu a:link,
+.conflict2.mainmenu a:visited,
+.conflict2.mainmenu a:active
+{
+	color:				var(--conflict2-font-head);
+}
+.conflict2.contentbox td,
+.conflict2.contentbox a:link,
+.conflict2.contentbox a:visited,
+.conflict2.contentbox a:active
+{
+	color:				var(--conflict2-font-norm);
+}
+.conflict2.headerbox a:hover,
+.conflict2.contentbox a:hover,
+.conflict2.mainmenu a:hover
+{
+	color:				var(--conflict2-font-hovr);
+}
+
+
+
+.conflict3.headerbox {
+	background-color: 	var(--conflict3-back);
+	border: 			1px solid var(--conflict3-bord);
+	color:				var(--conflict3-font-norm);
+}
+.conflict3.contentbox {
+	background-color: 	#000000;
+	border: 			1px solid var(--conflict3-dark);
+	color:				var(--conflict3-font-norm);
+}
+.conflict3.contentbox table:not(.suppressMenuColors) {
+	background:			var(--conflict3-dark);
+	border:				none;
+}
+.conflict3.headerbox th,
+.conflict3.headerbox td {
+	background:			none;
+	color:				var(--conflict3-font-head);
+}
+.conflict3.contentbox th {
+	background:			var(--conflict3-dark);
+	color:				var(--conflict3-font-head);
+}
+.conflict3.headerbox a:link,
+.conflict3.headerbox a:visited,
+.conflict3.headerbox a:active,
+.conflict3.mainmenu a:link,
+.conflict3.mainmenu a:visited,
+.conflict3.mainmenu a:active
+{
+	color:				var(--conflict3-font-head);
+}
+.conflict3.contentbox td,
+.conflict3.contentbox a:link,
+.conflict3.contentbox a:visited,
+.conflict3.contentbox a:active
+{
+	color:				var(--conflict3-font-norm);
+}
+.conflict3.headerbox a:hover,
+.conflict3.contentbox a:hover,
+.conflict3.mainmenu a:hover
+{
+	color:				var(--conflict3-font-hovr);
+}
+
+
+
+
+
+
+.conflict0.headerbox {
+	background-color: 	var(--conflict0-back);
+	border: 			1px solid var(--conflict0-bord);
+	color:				var(--conflict0-font-norm);
+}
+.conflict0.contentbox {
+	background-color: 	#000000;
+	border: 			1px solid var(--conflict0-dark);
+	color:				var(--conflict0-font-norm);
+}
+.conflict0.contentbox table:not(.suppressMenuColors) {
+	background:			var(--conflict0-dark);
+	border:				none;
+}
+.conflict0.headerbox th,
+.conflict0.headerbox td {
+	background:			none;
+	color:				var(--conflict0-font-head);
+}
+.conflict0.contentbox th {
+	background:			var(--conflict0-dark);
+	color:				var(--conflict0-font-head);
+}
+.conflict0.headerbox a:link,
+.conflict0.headerbox a:visited,
+.conflict0.headerbox a:active,
+.conflict0.mainmenu a:link,
+.conflict0.mainmenu a:visited,
+.conflict0.mainmenu a:active
+{
+	color:				var(--conflict0-font-head);
+}
+.conflict0.contentbox td,
+.conflict0.contentbox a:link,
+.conflict0.contentbox a:visited,
+.conflict0.contentbox a:active
+{
+	color:				var(--conflict0-font-norm);
+}
+.conflict0.headerbox a:hover,
+.conflict0.contentbox a:hover,
+.conflict0.mainmenu a:hover
+{
+	color:				var(--conflict0-font-hovr);
+}
+
+

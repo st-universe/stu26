@@ -1,0 +1,155 @@
+:root {
+
+	--raceColor0-text:		#cccccc;
+	--raceColor0-head:		#ffffff;	
+	--raceColor0-body:		#333333;
+	--raceColor0-bord:		#333333;
+
+	--raceColor1-text:		#1b91ee;
+	--raceColor1-head:		#ffffff;	
+	--raceColor1-body:		#124d7c;
+	--raceColor1-bord:		#1b91ee;
+
+	--raceColor2-text:		#1caf11;
+	--raceColor2-head:		#ffffff;	
+	--raceColor2-body:		#0c4b08;
+	--raceColor2-bord:		#1caf11;
+
+	--raceColor3-text:		#e3120f;
+	--raceColor3-head:		#ffffff;	
+	--raceColor3-body:		#640f0e;
+	--raceColor3-bord:		#e3120f;	
+
+}
+
+
+
+
+table.race0,
+table.race1,
+table.race2,
+table.race3 {
+	width: 				calc(100% - 24px);
+	margin: 			12px;
+	margin-bottom:		24px;
+	border-collapse: 	separate;
+	border-spacing: 	1px;		
+}
+
+table.race0 {
+	background:			var(--raceColor0-body);
+    outline: 			4px outset var(--raceColor0-bord);
+}
+table.race1 {
+	background:			var(--raceColor1-body);
+    outline: 			4px outset var(--raceColor1-bord);
+}
+table.race2 {
+	background:			var(--raceColor2-body);
+    outline: 			4px outset var(--raceColor2-bord);
+}
+table.race3 {
+	background:			var(--raceColor3-body);
+    outline: 			4px outset var(--raceColor3-bord);
+}
+
+
+table.race0.suppressMenuColors th,
+table.race1.suppressMenuColors th,
+table.race2.suppressMenuColors th,
+table.race3.suppressMenuColors th {
+	font-size : 		9pt;
+	text-align: 		left;
+}
+
+table.race0.suppressMenuColors th,
+table.race0.suppressMenuColors th a:link,
+table.race0.suppressMenuColors th a:visited {
+	color:				var(--raceColor0-head);
+	background-color : 	var(--raceColor0-body);
+}
+table.race1.suppressMenuColors th,
+table.race1.suppressMenuColors th a:link,
+table.race1.suppressMenuColors th a:visited {
+	color:				var(--raceColor1-head);	
+	background-color : 	var(--raceColor1-body);
+}
+table.race2.suppressMenuColors th,
+table.race2.suppressMenuColors th a:link,
+table.race2.suppressMenuColors th a:visited {
+	color:				var(--raceColor2-head);	
+	background-color : 	var(--raceColor2-body);
+}
+table.race3.suppressMenuColors th,
+table.race3.suppressMenuColors th a:link,
+table.race3.suppressMenuColors th a:visited {
+	color:				var(--raceColor3-head);	
+	background-color : 	var(--raceColor3-body);
+}
+
+
+
+table.race0.suppressMenuColors td,
+table.race0.suppressMenuColors a:link,
+table.race0.suppressMenuColors a:visited
+{
+	color : 			var(--raceColor0-text);
+}
+table.race1.suppressMenuColors td,
+table.race1.suppressMenuColors a:link,
+table.race1.suppressMenuColors a:visited
+{
+	color : 			var(--raceColor1-text);
+}
+table.race2.suppressMenuColors td,
+table.race2.suppressMenuColors a:link,
+table.race2.suppressMenuColors a:visited
+{
+	color : 			var(--raceColor2-text);
+}
+table.race3.suppressMenuColors td,
+table.race3.suppressMenuColors a:link,
+table.race3.suppressMenuColors a:visited
+{
+	color : 			var(--raceColor3-text);
+}
+
+
+table.race0.suppressMenuColors a:hover
+{
+	color : 			var(--mainColor-hover);
+}
+
+
+table.race0.suppressMenuColors input {
+	background-color: 	#000000;
+	color: 				var(--raceColor0-text);
+	outline: 			1px outset var(--raceColor0-text);
+	border:				none;
+	font-size: 			8pt;
+}
+table.race0.suppressMenuColors select {
+	background-color: 	#000000;
+	color: 				var(--raceColor0-text);
+	outline: 			1px outset var(--raceColor0-text);
+	font-family: 		Verdana, Geneva, Arial, Helvetica, sans-serif;		
+    font-size: 			9pt;
+	width:				250px;	
+}
+
+table.race0.suppressMenuColors input[type="text"]
+{
+	outline: 			1px solid var(--raceColor0-text);
+}
+table.race0.suppressMenuColors input[type="submit"],
+table.race0.suppressMenuColors input[type="button"]
+{
+
+	cursor:				pointer;
+	height:				20px;
+}
+
+
+
+
+

@@ -1,0 +1,107 @@
+:root {
+
+	--knColor-story-text:		#999999;
+	--knColor-story-head:		#bbbbbb;	
+	--knColor-story-body:		#262323;
+	--knColor-story-bord:		#303030;
+	
+	--knColor-official-text:	#8897cf;
+	--knColor-official-head:	#ffffff;	
+	--knColor-official-body:	#453b05;
+	--knColor-official-bord:	#ffd700;	
+	
+	--knColor-alliance-text:	#8897cf;
+	--knColor-alliance-head:	#ffffff;	
+	--knColor-alliance-body:	#054705;
+	--knColor-alliance-bord:	#00dd00;
+	
+	--knColor-race-text:		#C0C0C0;
+	--knColor-race-head:		#ffffff;	
+	--knColor-race-body:		#505050;
+	--knColor-race-bord:		#C0C0C0;	
+}
+
+
+
+table.kn_story.suppressMenuColors,
+table.kn_official.suppressMenuColors,
+table.kn_alliance.suppressMenuColors,
+table.kn_race.suppressMenuColors {
+	margin-left: 		25px;	
+	width: 				90%;
+	border-collapse: 	separate;
+	border-spacing: 	1px;	
+    outline-style: 		outset;
+	outline-width: 		4px;	
+}	
+table.kn_story.suppressMenuColors {
+	background-color: 	var(--knColor-story-body);
+    outline-color: 		var(--knColor-story-bord);
+}
+table.kn_official.suppressMenuColors {
+	background-color: 	var(--knColor-official-body);
+    outline-color: 		var(--knColor-official-bord);
+}
+table.kn_alliance.suppressMenuColors {
+	background-color: 	var(--knColor-alliance-body);
+    outline-color: 		var(--knColor-alliance-bord);
+}
+table.kn_race.suppressMenuColors {
+	background-color: 	var(--knColor-race-body);
+    outline-color: 		var(--knColor-race-bord);
+}
+
+
+
+table.kn_story.suppressMenuColors .kn_text,
+table.kn_official.suppressMenuColors .kn_text,
+table.kn_alliance.suppressMenuColors .kn_text,
+table.kn_race.suppressMenuColors .kn_text {
+	background-color : 	#000000;
+	font-size : 		9pt;
+	text-align: 		left;
+	vertical-align:		top;
+	font-family: 		Verdana, Geneva, Arial, Helvetica, sans-serif;	
+	padding:			4px;
+}
+table.kn_story.suppressMenuColors .kn_text {
+	color : 			var(--knColor-story-text);
+}
+table.kn_official.suppressMenuColors .kn_text {
+	color : 			var(--knColor-official-text);
+}
+table.kn_alliance.suppressMenuColors .kn_text {
+	color : 			var(--knColor-alliance-text);
+}
+table.kn_race.suppressMenuColors .kn_text {
+	color : 			var(--knColor-race-text);
+}
+
+table.kn_story.suppressMenuColors th,
+table.kn_official.suppressMenuColors th,
+table.kn_alliance.suppressMenuColors th,
+table.kn_race.suppressMenuColors th {
+	font-size : 		9pt;
+	text-align: 		left;
+	vertical-align:		top;
+	font-family: 		Verdana, Geneva, Arial, Helvetica, sans-serif;	
+}
+table.kn_story.suppressMenuColors th {
+	background-color : 	var(--knColor-story-body);
+	color : 			var(--knColor-story-head);
+}
+table.kn_official.suppressMenuColors th {
+	background-color : 	var(--knColor-official-body);
+	color : 			var(--knColor-official-head);
+}
+table.kn_alliance.suppressMenuColors th {
+	background-color : 	var(--knColor-alliance-body);
+	color : 			var(--knColor-alliance-head);
+}
+table.kn_race.suppressMenuColors th {
+	background-color : 	var(--knColor-race-body);
+	color : 			var(--knColor-race-head);
+}
+
+
+
